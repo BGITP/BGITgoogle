@@ -1,3 +1,5 @@
+import logoImg from '../assets/logo_transparent.png';
+
 export interface GolfDocument {
   id: string;
   title: string;
@@ -58,8 +60,8 @@ export const BRAND_INFO = {
   bannerEyebrow: "한국 여행사가 신뢰하는",
   bannerTitle: "태국 최고품질 · 최저가\n골프 파트너",
   bannerButtonLabel: "지금 BGIT와 상담하세요",
-  favicon: "/assets/aistudio/logo_transparent.png",
-  logoImage: "/assets/aistudio/logo_transparent.png",
+  favicon: logoImg,
+  logoImage: logoImg,
   heroImage: "https://cdn.sixshop.io/sf-gateway/public/stores/bgit-p/website/ewfwfw_1793630236790.jpg",
   contactKakao: "https://pf.kakao.com",
 };

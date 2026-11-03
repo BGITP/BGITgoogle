@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { BRAND_INFO } from '../data/golfData';
 import { MessageSquare, Shield, FileText, ChevronRight, X } from 'lucide-react';
+import logoImg from '../assets/logo_transparent.png';
 
 export default function Footer() {
   const [activeModal, setActiveModal] = useState<'terms' | 'privacy' | null>(null);
@@ -13,7 +14,7 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
               <img
-                src="/assets/aistudio/logo_transparent.png"
+                src={logoImg}
                 alt="BGIT Thai"
                 className="h-10 w-auto object-contain bg-transparent"
               />

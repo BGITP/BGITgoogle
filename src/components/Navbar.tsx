@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import logoImg from '../assets/logo_transparent.png';
 
 interface NavbarProps {
   onOpenPartnerModal: () => void;
@@ -25,7 +26,7 @@ export default function Navbar({ onOpenPartnerModal, onOpenConsultationModal }: 
           {/* Brand Logo */}
           <a href="#" className="flex items-center group py-0 my-0 leading-none shrink-0" aria-label="BGIT Thai">
             <img
-              src="/assets/aistudio/logo_transparent.png"
+              src={logoImg}
               alt="BGIT Thai - Join With Thai Golfer / All Golf Service"
               style={{ width: '300px', height: 'auto' }}
               className="w-[300px] h-auto max-h-[114px] object-contain bg-transparent block my-0 group-hover:scale-[1.01] transition-transform duration-200"
